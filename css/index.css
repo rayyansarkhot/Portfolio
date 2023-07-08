@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100;200;300;400;500;600;700;800&display=swap');
+
+/* General Styles */
+body {
+    font-family: 'Belanosima', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F9F9F9;
+    color: #333;
+  }
+  
+  h1, h2, h3 {
+    /* font-family: 'Martian Mono', monospace; */
+  }
+  
+  main {
+    padding: 2vh 5vw;
+  }
+  
+  section {
+    margin-bottom: 4vh;
+  }
+  
+  /* Header Section */
+  header {
+    background-color: #192A56;
+    padding: 2vh 5vw;
+    color: #fff;
+  }
+  
+  .header-container {
+    max-width: 80vw;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .site-title {
+    font-size: 3.5vw;
+    margin: 0;
+  }
+  
+  .site-subtitle {
+    font-size: 2vw;
+    margin: 1vh 0;
+  }
+  
+  /* About Section */
+  section#about {
+    text-align: center;
+  }
+  
+  /* Projects Section */
+  section#projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25vw, 1fr));
+    gap: 2vw;
+  }
+  
+  section#projects div {
+    background-color: #fff;
+    padding: 3vw;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  section#projects h3 {
+    margin-bottom: 1.5vh;
+    font-size: 2vw;
+  }
+  
+  section#projects p {
+    font-size: 1.5vw;
+  }
+  
+  /* Contact Section */
+  section#contact form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1vh;
+    max-width: 50vw;
+    margin: 0 auto;
+  }
+  
+  section#contact label {
+    font-weight: bold;
+  }
+  
+  section#contact input,
+  section#contact textarea {
+    width: 100%;
+    padding: 1vh;
+    border: 1px solid #D1D1D1;
+  }
+  
+  section#contact button {
+    padding: 2vh 4vw;
+    background-color: #192A56;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #192A56;
+    color: #fff;
+    padding: 1vh;
+    text-align: center;
+  }
+
+.container {
+  display: flex;
+  /* font-family: 'Bebas Neue', sans-serif; */
+  min-height: 100vh;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  flex: 1;
+  padding: 1vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  /* text-align: center; */
+}
+
+.content h3 {
+  font-size: 2.5vw;
+  margin-top: 0;
+  margin-bottom: 1vh;
+  display: flex; /* Added */
+  justify-content: center; /* Added */
+  align-items: center; /* Added */
+}
+
+.content p {
+  font-size: 1.8vw;
+  margin-bottom: 1.5vh;
+}
+
+.image {
+  flex: 1;
+  padding: 1vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5vw;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
