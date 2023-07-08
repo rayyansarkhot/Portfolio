@@ -43,33 +43,26 @@ body {
     font-size: 2vw;
     margin: 1vh 0;
   }
+
+  /* Add these styles for the "PROJECTS" header */
+section#projects {
+  text-align: center;
+}
+
+section#projects h2 {
+  font-size: 3vw;
+  margin: 4vh 0;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
   
   /* About Section */
   section#about {
     text-align: center;
   }
   
-  /* Projects Section */
-  section#projects {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25vw, 1fr));
-    gap: 2vw;
-  }
-  
-  section#projects div {
-    background-color: #fff;
-    padding: 3vw;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  section#projects h3 {
-    margin-bottom: 1.5vh;
-    font-size: 2vw;
-  }
-  
-  section#projects p {
-    font-size: 1.5vw;
-  }
   
   /* Contact Section */
   section#contact form {
@@ -108,9 +101,9 @@ body {
   }
 
 .container {
+  margin: 4vh 0;
   display: flex;
   /* font-family: 'Bebas Neue', sans-serif; */
-  min-height: 100vh;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -138,6 +131,8 @@ body {
 .content p {
   font-size: 1.8vw;
   margin-bottom: 1.5vh;
+  font-weight: 100;
+
 }
 
 .image {
@@ -153,4 +148,35 @@ body {
   height: auto;
   border-radius: 0.5vw;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section#projects .image {
+  flex-direction: column;
+  font-size: 5vh;
+}
+
+section#projects .image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5vw;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 2vh;
+  transition: transform 0.3s ease;
+}
+
+section#projects .image img:hover {
+  transform: scale(1.05);
+}
+
+
+section#projects .image h3 {
+  font-size: 3.5vh;
+  margin: 4vh 0;
+  text-decoration: none;
+  color: #192A56;
+  transition: color 0.3s ease;
+}
+
+section#projects .image h3:hover {
+  color: #FF5733;
 }
