@@ -6,6 +6,7 @@
   <title>Software Developer Portfolio</title>
   <link rel="stylesheet" href="../css/index.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Belanosima&family=Martian+Mono:wght@100;200;300;400;500;600;700;800&display=swap">
+  <!-- <script src="../js/index.js"></script> -->
 </head>
 <body>
     <header>
@@ -62,7 +63,7 @@
         </div>
     
         <div class="content">
-          <h3>YOUNG MUSLIMS SUMMER LEAGUE STAT TRACKER</h3>
+          <h3>YMSL STAT TRACKER</h3>
           <p>This project was created for the local Young Muslims chapter I partake in. They run their
             annual basketball league called YMSL and would resort to Excel sheets or pen & paper to track stats.
             And the eventual display of players' stats would be through a large Google Sheet.<br> I knew it could
@@ -89,7 +90,8 @@
           </p>
           <p>This was a big problem.</p>
 
-          <p>As this was  
+          <p>With not too many lines of code, I developed a script that cross checks columns
+            that the user wants from two CSV files and produces a resulting CSV file.  
           </p>
           <p>This site was made with HTML, CSS, Js, NodeJS, ExpressJS, Nginx, Docker, Google Sheets API, & Google
             Cloud Platform.
@@ -99,7 +101,7 @@
         
         <div class="image">
           <a href="https://github.com/rayyansarkhot/CSVcolumnChecker" target="_blank">
-            <h3>GitHub Repository</h3>
+            <h3>Project Repository</h3>
           </a>
           <a href="https://github.com/rayyansarkhot/CSVcolumnChecker" target="_blank">
             <img src="../media/CSVcheckerScriptPic.jpg" alt="CSV Column Checker">
@@ -108,23 +110,75 @@
 
       </div>
 
+      <div class="container">
+    
+        <div class="image">
+          <!-- <a href="" target="_blank"> -->
+            <h3>Ongoing Development</h3>
+          <!-- </a> -->
+          <!-- <a href="http://ymsl.us" target="_blank"> -->
+            <img src="../media/princetonCRMpic.jpg" alt="Princeton IT Services CRM">
+          <!-- </a> -->
+        </div>
+    
+        <div class="content">
+          <h3>PRINCETON IT SERVICES CRM</h3>
+          <p>As part of my most recent internship, I was assigned to a team of interns to migrate my company's CRM
+            software, which was Microsoft Dynamics, to an in-house product. The goal of this project was to remove
+            the bells and whistles a large product like Dynamics had and implement NLP for RFQ scanning. 
+          </p>
+          <p>Throughout the course of 3 months, we developed a website for PrincetonITS to track their customer relations,
+            and more importantly, autofill new RFQ data with the use of AI. The benefit of this came in that it decreased
+            the time spent by the procurement team of looking for data, reduced the error rate of the procurement team, and 
+            streamlined the whole process of opportunity creation & capitalization. 
+          </p>
+          <p>This site was made with ReactJs, CSS, Spring Boot, ChatGPT API, Nginx, MySQL, and AWS EC2 & RDS.
+          </p>
+        </div>
+
+      </div>
+
     </section>
 
     <section id="contact">
-      <h2>Contact Me</h2>
-      <form>
+      <h2>Contact me</h2>
+      
+      <div class="contactContainer">
+        <div class="contact-icons">
+          <a href="https://www.linkedin.com/in/rayyansarkhot/" target="_blank" rel="noopener noreferrer">
+            <img src="../media/linkedinPic.png" alt="LinkedIn">
+          </a>
+    
+          <a href="https://github.com/rayyansarkhot" target="_blank" rel="noopener noreferrer">
+            <img src="../media/githubIcon.png" alt="GitHub">
+          </a>
+    
+          <a href="mailto:rayyanrsarkhot@gmail.com">
+            <img src="../media/emailIcon.png" alt="Email">
+          </a>
+        </div>
+        <h3>Email - rayyanrsarkhot@gmail.com</h3>
+
+
+        <div class="iframe-container">
+
+          <iframe src="../media/Resume(7-8-2023).pdf"></iframe>
+        </div>
+      </div>
+    </section>
+    
+         <!-- <form id="contact-form">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
-
+    
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required>
-
+    
         <label for="message">Message:</label>
         <textarea id="message" name="message" required></textarea>
-
+    
         <button type="submit">Send Message</button>
-      </form>
-    </section>
+      </form> -->
   </main>
 
   <footer>

@@ -2,108 +2,102 @@
 
 /* General Styles */
 body {
-    font-family: 'Belanosima', Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #F9F9F9;
-    color: #333;
-  }
-  
-  h1, h2, h3 {
-    /* font-family: 'Martian Mono', monospace; */
-  }
-  
-  main {
-    padding: 2vh 5vw;
-  }
-  
-  section {
-    margin-bottom: 4vh;
-  }
-  
-  /* Header Section */
-  header {
-    background-color: #192A56;
-    padding: 2vh 5vw;
-    color: #fff;
-  }
-  
-  .header-container {
-    max-width: 80vw;
-    margin: 0 auto;
-    text-align: center;
-  }
-  
-  .site-title {
-    font-size: 3.5vw;
-    margin: 0;
-  }
-  
-  .site-subtitle {
-    font-size: 2vw;
-    margin: 1vh 0;
-  }
+  font-family: 'Belanosima', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5; /* Update background color */
+  color: #333;
+}
 
-  /* Add these styles for the "PROJECTS" header */
-section#projects {
+main {
+  padding: 2vh 5vw;
+}
+
+section {
+  margin-bottom: 4vh;
+}
+
+/* Header Section */
+header {
+  background-color: #192A56;
+  padding: 2vh 5vw;
+  color: #fff;
+}
+
+.header-container {
+  max-width: 80vw;
+  margin: 0 auto;
   text-align: center;
 }
 
-section#projects h2 {
+.site-title {
+  font-size: 3.5vw;
+  margin: 0;
+}
+
+.site-subtitle {
+  font-size: 2vw;
+  margin: 1vh 0;
+}
+
+/* Add these styles for the "PROJECTS" header */
+section#projects h2,
+section#contact h2 {
   font-size: 3vw;
   margin: 4vh 0;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 0.1em;
+  color: #192A56; /* Update text color */
 }
 
-  
-  /* About Section */
-  section#about {
-    text-align: center;
-  }
-  
-  
-  /* Contact Section */
-  section#contact form {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1vh;
-    max-width: 50vw;
-    margin: 0 auto;
-  }
-  
-  section#contact label {
-    font-weight: bold;
-  }
-  
-  section#contact input,
-  section#contact textarea {
-    width: 100%;
-    padding: 1vh;
-    border: 1px solid #D1D1D1;
-  }
-  
-  section#contact button {
-    padding: 2vh 4vw;
-    background-color: #192A56;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-  }
-  
-  /* Footer */
-  footer {
-    background-color: #192A56;
-    color: #fff;
-    padding: 1vh;
-    text-align: center;
-  }
+/* About Section */
+section#about {
+  text-align: center;
+}
+
+/* Contact Section */
+section#contact form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1vh;
+  max-width: 50vw;
+  margin: 0 auto;
+}
+
+section#contact label {
+  font-weight: bold;
+}
+
+section#contact input,
+section#contact textarea {
+  width: 100%;
+  padding: 1vh;
+  border: 1px solid #D1D1D1;
+}
+
+section#contact button {
+  padding: 2vh 4vw;
+  background-color: #192A56;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background-color: #192A56;
+  color: #fff;
+  padding: 1vh;
+}
+
+footer p {
+  margin-left: 1vw;
+}
 
 .container {
-  margin: 4vh 0;
+  margin: 8vh 0;
   display: flex;
-  /* font-family: 'Bebas Neue', sans-serif; */
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -116,23 +110,23 @@ section#projects h2 {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  /* text-align: center; */
 }
 
 .content h3 {
   font-size: 2.5vw;
   margin-top: 0;
   margin-bottom: 1vh;
-  display: flex; /* Added */
-  justify-content: center; /* Added */
-  align-items: center; /* Added */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #192A56; /* Update text color */
 }
 
 .content p {
   font-size: 1.8vw;
   margin-bottom: 1.5vh;
   font-weight: 100;
-
+  text-align: center;
 }
 
 .image {
@@ -168,7 +162,6 @@ section#projects .image img:hover {
   transform: scale(1.05);
 }
 
-
 section#projects .image h3 {
   font-size: 3.5vh;
   margin: 4vh 0;
@@ -179,4 +172,63 @@ section#projects .image h3 {
 
 section#projects .image h3:hover {
   color: #FF5733;
+}
+
+section#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contactContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 2vh;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-icons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1vh 0;
+  transition: transform 0.3s ease;
+}
+
+.contact-icons img {
+  width: 4vw;
+  height: 4vw;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 0 1vw .5vw 1vw;
+}
+
+.contact-icons a:hover {
+  transform: scale(1.1);
+}
+
+.contact-icons img {
+  max-width: 100%;
+  height: auto;
+}
+
+.iframe-container {
+  width: 80vw;
+  height: 80vh;
+  margin-top: 2vh;
+}
+.iframe-container h3 {
+  text-align: center;
+}
+
+.iframe-container iframe {
+  width: 100%;
+  height: 100%;
 }
